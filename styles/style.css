@@ -1,0 +1,340 @@
+/* Setup Styles */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+        
+/* General Styles */
+html {
+    font-size:62.5%;
+}
+
+p {
+    line-height:29px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size:1.8rem;
+}
+
+.wrapper {
+    margin:0 auto;
+    max-width:1200px;
+}
+
+img {
+    max-width:100%;
+}
+
+main a {
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+    text-transform: uppercase;
+    padding:10px 15px;
+    border: 1px solid #e7a8e6;
+    background:#e7a8e6;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight:bold;
+}
+
+h5 {
+    font-weight:bold;
+}
+
+/* Header Styles */
+header {
+    background: url(../assets/image-1.png);
+    background-position:center;
+    max-width:1600px;
+    height:800px;
+}
+
+.header {
+    position:relative;
+}
+
+header a {
+    text-decoration:none;
+    text-transform:uppercase;
+}
+
+header .navbar li {
+    display:inline-block;
+    margin:0 10px;
+}
+
+header h1, .navbar{
+    display:inline-block;
+}
+
+header ul {
+    float:right;
+}
+
+.navbar {
+    margin-right:10%;
+}
+
+.navbar a {
+    color:white;
+}
+
+.sideLinks {
+    list-style:none;
+    margin: 10% 5% 0 0;
+}
+
+.sideLinks li {
+    margin-top:70%;
+}
+
+.clearfix h1 {
+    margin-top:0.5%;
+    margin-left:5%;
+}
+
+header {
+    color:white;
+}
+
+.title1, .title2 {
+    margin:0;
+    padding:0;
+    position:absolute;
+    top:550px;
+    right:33%;
+}
+
+.title2 {
+    font-size:13rem;
+}
+
+.title1 {
+    text-transform:uppercase;
+    margin-right:8%;
+    font-family: 'Lato', sans-serif;
+    font-weight:bold;
+    font-size:3.2rem;
+}
+
+/* About Styles */
+.about {
+    background: #f0f5ff;
+}
+
+.section {
+    width:50%;
+    text-align:center;
+    padding:5% 0;
+}
+
+.section h1 {
+    margin:0;
+    font-size:4.2rem;
+}
+
+.section p {
+    margin-bottom:5%;
+}
+
+
+/* Gallery Styles */
+/* .gallery {
+    margin:5% 0 5% 2%;
+    border:1px solid tomato;
+}
+
+.gallery img {
+    margin-right:0.5%;
+    float:left;
+}
+
+.gallery img:last-child {
+    margin-right:0;
+} */
+
+.gallery li {
+    width:calc(33.3% - 1%);
+    float:left;
+    list-style:none;
+    margin: 5% 1% 5% 0;
+}
+
+/* Nav Styles */
+.nav {
+    background: url('../assets/image-5.png');
+    background-position:center;
+    height:300px; 
+}
+
+.nav ul {
+    padding:7% 0 0 17%;
+}
+
+.nav li {
+    display:inline-block;
+    color:white;
+    font-family: 'Playfair Display', serif;
+    font-size:3rem;
+    margin:0 5%;
+    position:relative;
+}
+
+.nav li i {
+    position:absolute;
+    top:-15%;
+    left:35%;
+}
+
+/* Behind the Lens Styles */
+.midsection {
+    padding:5% 0;
+}
+
+.contentimg {
+    width:30%;
+    float:left;
+}
+
+.contentimg img {
+    width:100%;
+}
+
+.content {
+    width:calc(70% - 5%);
+    float:left;
+    margin-left:5%;
+}
+
+.content h1 {
+    margin:0;
+    padding:0;
+}
+
+/* Last Section Styles */
+
+ .lastsection {
+    background:#f0f5ff;
+}
+
+
+.contentContain {
+    width:30%;
+    display:inline-block;
+    margin:5% 0 0 15%;
+}
+
+.contentContain h4 {
+    font-size:3.2rem;
+    margin:0;
+}
+
+.contentContain:first-child {
+    text-align:right;
+}
+
+.contentContain:last-child {
+    margin: 5% 15% 0 0;
+}
+
+.contentImage {
+    width:50%;
+    display:inline-block;
+}
+
+.contentImage img {
+    width:100%;
+    display:block;
+}
+
+.one, .contentContain:last-child {
+    float:right;
+} 
+
+/* Footer Styles */
+footer {
+    background:#232323;
+    /* border: 1px solid tomato; */
+    padding:5%;
+}
+
+footer h5 {
+   font-size:2.4rem;
+}
+
+footer p, h5{
+    margin:0;
+    padding:0;
+    color:white;
+}
+
+.contact, .pages {
+    /* border:1px solid tomato; */
+    width:15%;
+    float:left;
+}
+
+.subscribe {
+    text-align:center;
+    width:45%;
+    float:left;
+    margin-left:15%;
+}
+
+.email {
+    padding:2% 5%;
+    border:1px solid white;
+    margin:2% 0;
+    width:70%;
+}
+
+button {
+    padding:2% 5%;
+    background: #e7a8e6;
+    border:1px solid #e7a8e6;
+    text-transform:uppercase;
+}
+
+.pages {
+    text-align:right;
+    margin-left:7%;
+}
+
+.pages ul {
+    margin:0;
+    padding:0;
+}
+
+.pages li {
+    list-style:none;
+    
+}
+
+.pages a {
+    color:white;
+    text-decoration:none;
+}
+
+/* Copyright Styles */
+.copyright {
+    clear:both;
+    background:black;
+    color:#fcfcfc;
+    text-align:center;
+}
+
+.copyright p {
+    margin:0;
+    padding:0;
+}
+
+/* Media Queries */
+@media (max-width:1300px) {
+    
+}
