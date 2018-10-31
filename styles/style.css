@@ -69,15 +69,15 @@ header .navbar li {
     margin:0 10px;
 }
 
-header h1, .navbar{
-    display:inline-block;
+header h1, .menu{
+    display:inline;
 }
 
 header ul {
     float:right;
 }
 
-.navbar {
+.menu .navbar {
     margin-right:10%;
 }
 
@@ -103,24 +103,32 @@ header {
     color:white;
 }
 
-.title1, .title2 {
-    margin:0;
-    padding:0;
+
+.title {
+    position:relative;
+    margin:40% 0 0 30%;
+}
+
+.title1 {
+    font-family:'Lato', sans-serif;
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size:3.2rem;
     position:absolute;
-    top:550px;
-    right:33%;
+    top:-5%;
+    left:15%;
 }
 
 .title2 {
     font-size:13rem;
 }
 
-.title1 {
-    text-transform:uppercase;
-    margin-right:8%;
-    font-family: 'Lato', sans-serif;
-    font-weight:bold;
-    font-size:3.2rem;
+.navbar .exit-responsive, .hamburger {
+    display:none;
+}
+
+.show.menu {
+	display: block;
 }
 
 /* About Styles */
@@ -145,20 +153,6 @@ header {
 
 
 /* Gallery Styles */
-/* .gallery {
-    margin:5% 0 5% 2%;
-    border:1px solid tomato;
-}
-
-.gallery img {
-    margin-right:0.5%;
-    float:left;
-}
-
-.gallery img:last-child {
-    margin-right:0;
-} */
-
 .gallery li {
     width:calc(33.3% - 1%);
     float:left;
@@ -260,7 +254,6 @@ header {
 /* Footer Styles */
 footer {
     background:#232323;
-    /* border: 1px solid tomato; */
     padding:5%;
 }
 
@@ -275,7 +268,6 @@ footer p, h5{
 }
 
 .contact, .pages {
-    /* border:1px solid tomato; */
     width:15%;
     float:left;
 }
@@ -334,7 +326,274 @@ button {
     padding:0;
 }
 
-/* Media Queries */
-@media (max-width:1300px) {
-    
+/* MEDIA QUERIES */
+@media (max-width:1022px){
+    .gallery li {
+        margin:0;
+    }
+  
+    .contentContain {
+        margin:3% 0 0 7%;
+        width:40%;
+    }
+
+    .contentContain:last-child {
+        margin:3% 7% 0 0;
+    }
+
 }
+
+
+@media (max-width:940px) {
+    /* Header */
+    .title1, .title2 {
+        right:27%;
+    }
+
+    /* Nav */
+    .nav ul {   
+        padding-left:12%;
+    }
+
+    /* Behind the Lens */
+    .content {
+        width:50%;
+    }
+
+    .contentimg {
+        margin-left:5%;
+    }
+
+    /* Content/Image Section */
+    .contentContain {
+        margin:1% 0 0 4%;
+    }
+
+    .contentContain:last-child {
+        margin:1% 4% 0 0;
+    }
+}
+
+
+@media (max-width:768px) {
+   /* General */
+    body {
+        font-size:1.6rem;
+    }
+
+    main h1, h4 {
+        font-size:2.6rem;
+    }
+
+    main a {
+        padding:5px 10px;
+    }
+
+    /* Header Nav */
+    .navbar .exit-responsive, .hamburger {
+		display: block;
+		font-size: 25px;
+	}
+
+    .header {
+        position:relative;
+    }
+
+    .hamburger {
+        position:absolute;
+        top:0;
+        right:5%;
+    }
+
+	.menu {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		color: white;
+	}
+
+	.menu ul {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.menu ul a {
+		font-size: 50px;
+		text-align: center;
+		width: 100%;
+		padding: 30px;
+    }
+
+    .title {
+        margin-left:25%;
+    }
+
+    .title1 {
+        font-size:2.5rem;
+    }
+
+    .title2 {
+        font-size:9rem;
+    }
+
+    /* About */
+    .section {
+        width:70%;
+    }
+
+    /* Nav */
+    .nav ul {
+        padding:10% 0 0 10%;
+    }
+    .nav li {
+        font-size:2.6rem;
+    }
+
+    /* Content/Image Section */
+    .lastsection {
+        position:relative;
+        height:130%;
+    }
+
+    .contentContain, .contentImage {
+       width:100%;
+   }
+
+   .contentContain:first-child {
+        margin-top:60%;
+        padding:3%;
+        text-align:center;
+   }
+
+   .contentImage:first-child {
+        position:absolute;
+        top:0;
+   }
+   .contentContain {
+       text-align:center;
+       padding:3%;
+       margin:0;
+   }
+
+   @media (max-width:480px) {
+
+      /* Header */
+        header {
+           height:600px;
+       }
+
+        .title1 {
+            font-size:2rem;
+            top:-15%;
+        }
+
+        .title2 {
+            font-size:7rem;
+        }
+
+        /* About */
+        .section {
+            padding:10% 0;
+        }
+
+        /* Gallery */
+        .gallery {
+            margin:0;
+            padding:0;
+        }
+
+        .gallery img {
+            display:block;
+        }
+
+        .gallery li {
+            width:50%;
+            margin:0;
+            padding:0;
+        }
+
+        .gallery li:last-child {
+            display:none;
+        }
+        
+        /* Nav */
+        .nav {
+            background:#1f2022;
+            height:100%;
+        }
+
+        .nav ul {
+            margin:0;
+            padding:5% 0;
+        }
+
+        .nav li {
+            width:100%;
+            text-align:center;
+            padding:5%;
+            margin:0;
+        }
+
+        .nav li:last-child {
+            padding:0;
+        }
+
+        .nav li i {
+            top:5%;
+            left:48%;
+        }
+
+        /* Behind the Lens */
+    
+        .contentimg {
+            width:80%;
+            margin:5% 10%;
+        }
+
+        .content {
+            margin-left:13%;
+            width:80%;
+        }
+
+        .content a {
+            margin-left:25%;
+        }
+        .content h1 {
+            text-align:center;
+        }
+
+        /* Content/Image */
+        .contentContain {
+            padding:10%;
+        }
+
+        .contentContain:first-child {
+            padding:10%;
+        }
+
+        /* Footer */
+        footer {
+            position:relative;
+        }
+
+        .subscribe {
+            width:80%;
+            position:absolute;
+            top:5%;
+            right:13%;
+        }
+
+        .email, button {
+            width:80%;
+        }
+
+        .contact, .pages {
+            width:30%;
+            margin:40% 0 0 10%;
+            text-align:center;
+        }
+
+   }

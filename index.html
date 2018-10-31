@@ -16,12 +16,18 @@
         <div class="wrapper header">
             <nav class="clearfix">
                 <h1>Shutter</h1>
-                <ul class="navbar">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+
+                <p class="hamburger"><i class="fas fa-bars"></i></p>
+
+                <div class="menu">
+                    <ul class="navbar">
+                        <li class="exit-responsive"><i class="fas fa-times"></i></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
             
             <ul class="sideLinks">
@@ -31,8 +37,10 @@
                 <li><i class="fab fa-twitter"></i></li>
             </ul>
            
-            <h2 class="title1">Welcome to</h2>
-            <h1 class="title2">Shutter</h1>
+            <div class="title">
+                <h2 class="title1">Welcome to</h2>
+                <h1 class="title2">Shutter</h1>
+            </div>
             
         </div>
     </header>
@@ -51,16 +59,16 @@
         <!-- GALLERY SECTION -->
         <section>
             <div class="wrapper clearfix">
-                <!-- <div class="gallery"> -->
+        
                 <ul class="gallery">
                     <li>
-                        <img src="assets/image-2.png" alt="">
+                        <img src="assets/image-2.png" alt="two palm trees with a sunset sky">
                     </li>
                     <li>
-                        <img src="assets/image-3.png" alt="">
+                        <img src="assets/image-3.png" alt="jar with sparkly silver wires">
                     </li>
                     <li>
-                        <img src="assets/image-4.png" alt="">
+                        <img src="assets/image-4.png" alt="city street traffic">
                     </li>
                 </ul>
                 <!-- </div> -->
@@ -96,7 +104,7 @@
         <section>
             <div class="wrapper midsection clearfix">
                 <div class="contentimg">
-                    <img src="assets/image-6.png" alt="">
+                    <img src="assets/image-6.png" alt="girl with a camera photographing">
                 </div>
                 
                 <div class="content">
@@ -119,13 +127,13 @@
                     </div>
 
                     <div class="contentImage one">
-                        <img src="assets/image-7.png" src="">
+                        <img src="assets/image-7.png" src="a beach with a big cliff rock">
                     </div>
                 </div>
 
-                <div class="container">
+                <div class="container clearfix">
                     <div class="contentImage two">
-                        <img src="assets/image-8.png" alt="">
+                        <img src="assets/image-8.png" alt="girl with her hand in jean pocket at the beach">
                     </div>  
 
                     <div class="contentContain">
@@ -175,6 +183,21 @@
     <div class="copyright">
         <p>Copyright <i class="far fa-copyright"></i> 2018 HackerYou</p>
     </div>
+
+    <!-- JQUERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        $('.hamburger').on('click', function () {
+            $('.menu').toggleClass('show');
+        });
+
+        $('.exit-responsive').on('click', function () {
+            $('.menu').toggleClass('show');
+        });
+    });
+</script>
     
 </body>
 </html>
