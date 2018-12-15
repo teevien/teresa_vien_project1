@@ -1,0 +1,4 @@
+# teresa_vien_project1
+My first project involves creating a one page PSD conversion for a client. The goal was to execute the designer's vision while building a good user experience on various devices. Through this project I learned how to create responsive webpages with media queries. I got to practice with floats and clearfix as we were not permitted to use flex or CSS grids for this project. Doing this allowed me to think about the plan first before building the site as we are restricted to using floats only. Also, by planning the layout of the website, I was able to manage how the site will then be scaled down to different device widths.
+
+As this is my first official project of converting a client design, I now look and see that there are better ways I can scale the responsive design. 
